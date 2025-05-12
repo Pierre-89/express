@@ -25,11 +25,6 @@ app.get("/employees", (req, res) => {
 const port = 5000;
 
 app.listen(port, () => {
-
-  fetch("http://localhost:5000/employees")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data)
-  });
+ console.log(`✅ Server is running on http://localhost:${5000}`);
 });
 
